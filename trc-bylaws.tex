@@ -1,0 +1,635 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+]{book}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+\usepackage{booktabs}
+\usepackage{amsthm}
+\makeatletter
+\def\thm@space@setup{%
+  \thm@preskip=8pt plus 2pt minus 4pt
+  \thm@postskip=\thm@preskip
+}
+\makeatother
+
+\usepackage[a4paper]{geometry}
+\geometry{left=2cm}
+\geometry{right=2cm}
+\geometry{bottom=2cm}
+\geometry{top=2cm}
+
+%\usepackage{hyperref}
+%\hypersetup{
+%    colorlinks=true,
+%    linkcolor=blue,
+%    filecolor=magenta,
+%    urlcolor=cyan,
+%    }
+
+% https://tex.stackexchange.com/a/233271
+\usepackage[explicit]{titlesec}
+\titleformat{name=\section,numberless}[hang]{}{}{0cm}{%
+  \LARGE #1\markboth{#1}{#1}%
+}
+
+\frontmatter
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{plainnat}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same} % disable monospaced font for URLs
+\hypersetup{
+  pdftitle={Trinity Reformed Church Bylaws},
+  pdfauthor={Trinity Reformed Church},
+  colorlinks=true,
+  linkcolor={Maroon},
+  filecolor={Maroon},
+  citecolor={Blue},
+  urlcolor={Blue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Trinity Reformed Church Bylaws}
+\author{Trinity Reformed Church}
+\date{2023-03-15}
+
+\begin{document}
+\maketitle
+
+{
+\hypersetup{linkcolor=}
+\setcounter{tocdepth}{1}
+\tableofcontents
+}
+\hypertarget{welcome}{%
+\chapter*{Welcome}\label{welcome}}
+\addcontentsline{toc}{chapter}{Welcome}
+
+These are the official bylaws for Trinity Reformed Church. You can always find the latest online version at \url{https://bylaws.trinityreformed.org} and download the latest PDF version \href{https://bylaws.trinityreformed.org/trc-bylaws.pdf}{here}. A record of the changes can be found in the \href{https://bylaws.trinityreformed.org/updates.html}{Updates} section at the end of the book.
+
+Trinity Reformed Church was established on October 27, 1996. These bylaws were last amended on October 24, 2021.
+
+\textbf{Contact us:}
+
+2401 S. Endwright Road\\
+Bloomington, Indiana 47403\\
+\href{mailto:office@trinityreformed.org}{\nolinkurl{office@trinityreformed.org}}\\
+(812) 825-2684
+
+THESE BYLAWS ARE SUBJECT TO ARBITRATION PURSUANT TO THE INDIANA CODE SECTION 34-57-2-1 ET SEQ.
+
+\mainmatter
+
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+The following Bylaws are designed to help our church operate in a Biblically faithful manner. Like most church bylaws, they cover basic issues related to membership, congregational meetings, the responsibilities of church officers, and the use of church property. They also cover issues that are often overlooked in standard bylaws, such as Biblical counseling, confidentiality, and conflict resolution.
+
+At first glance, you may wonder why we have gone into such detail and addressed issues that churches have traditionally ignored. The primary answer to this question is that we believe there has been a significant change in the moral and legal climate of this country. Historically, most Americans, whether they were Christian or not, held to a common framework of basic moral values. Honesty, fairness, respect for others, self-discipline, sexual fidelity, and accountability were generally viewed as commendable qualities. In recent years, however, respect for these qualities has been undermined by a growing emphasis on individualism, a diminished respect for authority, the acceptance of relative morality, and the loss of common norms and values.
+
+Because of this change, it is no longer possible to assume that everyone holds to the same standard of common sense, fairness, and justice, even within the same church. Therefore, what seems to be appropriate to one member of a church (for example, giving three days' notice of a special congregational meeting, or allowing the deacons to spend \$3,000 without congregational approval) might seem to be outrageous to another member.
+
+This loss of common values even within the church can cause a great deal of confusion and conflict. It can also expose a church to devastating lawsuits. A generation ago, very few people would have even dreamed of suing a church. But the legal climate has changed dramatically in recent years, and today lawsuits against churches are commonplace. Part of the reason for this is that people have differing expectations as to how a church should conduct its affairs and treat its members. When these expectations are not met, a lawsuit often follows, which can ruin a church both spiritually and financially.
+
+As Proverbs 22:3 warns, ``A prudent man sees danger and takes refuge, but the simple keep going and suffer for it.'' Realizing that the absence of common norms and values can pose a threat to the unity and well-being of our church, we developed these Bylaws as a means of establishing commonly accepted standards for how we would treat one another and govern ourselves as a body. In particular, these Bylaws are designed to accomplish these goals:
+
+\begin{itemize}
+\item
+  They help to prevent surprises and disappointed expectations by providing potential members with a thorough explanation of how the church intends to govern itself.
+\item
+  They reduce the likelihood of confusion and conflict within the church by establishing clear operational guidelines.
+\item
+  They prevent the misuse of authority by church leaders by limiting their powers and establishing procedures that protect members from being disciplined or losing rights without due process.
+\item
+  They give our elders protection from being compelled by a civil court to testify regarding information they receive through pastoral counseling, while at the same time giving them guidelines for reporting actual or suspected harm to others.
+\item
+  They reduce the church's exposure to legal liability by satisfying recently developed legal require­ments, even in areas where we deny that the state has jurisdiction, and by requiring that potential lawsuits will be resolved through Biblical mediation or arbitration rather than through litigation.
+\end{itemize}
+
+Most people would agree that these are worthwhile goals, but some might still be troubled by the amount of detail found in these Bylaws. They might say, ``Why can't we live with just a few general rules?'' The answer to that question is quite simple: Because we live in a fallen world, we tend to interpret general rules differently and twist them to serve our own selfish ends. Therefore, it is often necessary to develop detailed rules to eliminate the possibility of misunderstandings and mistreatment.
+
+This human need for detailed guidance is clearly reflected in Scripture. Instead of giving us only the two great commandments (love God and love your neighbor), God gave us the Ten Commandments. And he didn't stop there. Realizing our weakness and our sinful tendency to ignore or distort his commandments, God instructed Moses to set forth dozens of detailed laws on how we should behave (see Exodus, Leviticus, and Deuteronomy). All of these laws are summed up in the two great commandments, but even Jesus knew that until the world is renewed, we will still need the helpful guidance of the more detailed moral principles set forth throughout Scripture (see Matthew 5:17--7:6).
+
+One of the places that we sometimes need this kind of detailed guidance is in the church. Scripture does not tell us exactly how to give notice or establish quorums for congregational meetings, what information should remain confidential and what may be shared with others, how long church officers should serve without re-election, or how to dispose of property if a church dissolves. These Bylaws are designed to answer these types of questions, and will hopefully spare us from unnecessary confusion and conflict, help us to act in consistent and respectful ways, and allow us to devote ourselves to the more important matters of God's kingdom.
+
+Trinity Reformed Church is a member congregation of Evangel Presbytery, and so operates in conformity with not only these Bylaws, but also the Book of Church Order (BCO) of that governing body. These Bylaws are designed to supplement, but not contradict, provisions in the BCO. At times, they will reference the BCO explicitly; in all cases, on any given matter, a complete understanding of the rules under which we operate will be found by examining both documents.
+
+As you read these Bylaws, we encourage you to look up and study the Bible passages that are cited next to particular provisions. If such study does not answer all of your questions and concerns, please do not hesitate to approach our pastor or one of our elders, who will be happy to talk with you about these Bylaws.
+
+\hypertarget{preface}{%
+\chapter{Preface}\label{preface}}
+
+\hypertarget{the-king-and-head-of-the-church}{%
+\section{The King and Head of the Church}\label{the-king-and-head-of-the-church}}
+
+Jesus Christ, upon whose shoulders the government rests, whose name is called Wonderful, Counselor, the Mighty God, the Everlasting Father, the Prince of Peace; of the increase of whose government and peace there shall be no end; who sits upon the throne of David, and upon His kingdom to order it and to establish it with judgement and justice from henceforth, even forever (Isaiah 9:6--7); having all power given unto Him in heaven and in earth by the Father, who raised Him from the dead and set Him at His own right hand, far above all principality and power, and might, and dominion, and every name that is named, not only in this world, but also in that which is to come, and has put all things under His feet, and gave Him to be the Head over all things to the Church, which is His body, the fullness of Him that filleth all in all (Ephesians 1:20--23); He, being ascended up far above all heavens, that He might fill all things, received gifts for His Church, and gave all offices necessary for the edification of His Church and the perfecting of His saints (Ephesians 4:10--13).
+
+Jesus, the Mediator, the sole Priest, Prophet, King, Savior, and Head of the Church, contains in Himself, by way of eminency, all the offices in His Church, and has many of their names attributed to Him in the Scriptures. He is Apostle, Teacher, Pastor, Minister, Bishop and the only Lawgiver in Zion.
+
+It belongs to His Majesty from His throne of glory to rule and teach the Church through His Word and Spirit by the ministry of men; thus immediately exercising His own authority and enforcing His own laws, unto the edification and establishment of His Kingdom.
+
+Christ, as King, has given to His Church officers, oracles and ordinances; and especially has He ordained therein His system of doctrine, government, discipline and worship, all of which are either expressly set down in Scripture, or by good and necessary inference may be deducted therefrom; and to which things He commands that nothing be added, and that from them naught be taken away.
+
+Since the ascension of Jesus Christ to heaven, He is present with the Church by His Word and Spirit, and the benefits of all His offices are effectually applied by the Holy Ghost.
+
+\hypertarget{preliminary-principles1}{%
+\section[Preliminary Principles]{\texorpdfstring{Preliminary Principles\footnote{These numbered principles are drawn from those developed by the Synod of New York and Philadelphia, and prefixed to the \emph{Form of Government} published by that body in 1788, which thereafter became the governing documents of the Presbyterian Church in the United States and the United Presbyterian Church in the United States of America.}}{Preliminary Principles}}\label{preliminary-principles1}}
+
+Trinity Reformed Church, in setting forth the form of government founded upon and agreeable to the Word of God, reiterates the following great principles which have governed the formation of the plan:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  God alone is Lord of the conscience and has left it free from any doctrines or commandments of men (a) which are in any respect contrary to the Word of God, or (b) which, in regard to matters of faith and worship, are not governed by the Word of God. Therefore, the rights of private judgement in all matters that respect religion are universal and inalienable.
+\item
+  In perfect consistency with the above principle, every Christian Church, or union or association of particular churches, is entitled to declare the terms of admission into its communion and the qualifications of its ministers and members, as well as the whole system of its internal government which Christ has appointed. In the exercise of this right it may, notwithstanding, err in making the terms of communion either too lax or too narrow; yet even in this case, it does not infringe upon the liberty or the rights of others, but only makes an improper use of its own.
+\item
+  Our blessed Savior, for the edification of the visible Church, which is His body, has appointed officers not only to preach the Gospel and administer the Sacraments, but also to exercise discipline for the preservation both of truth and duty. It is incumbent upon these officers and upon the whole Church in whose name they act, to censure or cast out the erroneous and scandalous, observing in all cases the rules contained in the Word of God.
+\item
+  Godliness is founded on truth. A test of truth is its power to promote holiness according to our Savior's rule, ``By their fruits ye shall know them'' (Matthew 7:20). No opinion can be more pernicious or more absurd than that which brings truth and falsehood upon the same level.
+
+  On the contrary, there is an inseparable connection between faith and practice, truth and duty. Otherwise it would be of no consequence either to discover truth or to embrace it.
+\item
+  While, under the conviction of the above principle, it is necessary to make effective provision that all who are admitted as teachers be sound in the faith, there are truths and forms with respect to which men of good character and principles may differ. In all these it is the duty both of private Christians and societies to exercise mutual forbearance towards each other.
+\item
+  Though the character, qualifications and authority of Church officers are laid down in the Holy Scriptures, as well as the proper method of officer investiture, the power to elect persons to the exercise of authority in any particular society resides in that society.
+\item
+  All Church power, whether exercised by the body in general, or by representation, is only ministerial and declarative since the Holy Scriptures are the only rule of faith and practice. No Church judicatory may make laws to bind the conscience. All Church courts may err through human frailty, yet it rests upon them to uphold the laws of Scripture though this obligation be lodged with fallible men.
+\item
+  If the preceding Scriptural principles be steadfastly adhered to, the vigor and strictness of disciplines will contribute to the glory and well-being of the Church.
+
+  Since ecclesiastical discipline derives its force only from the power and authority of Christ, the great Head of the Church Universal, it must be purely moral and spiritual in its nature.
+\end{enumerate}
+
+\hypertarget{bylaws}{%
+\chapter{Bylaws}\label{bylaws}}
+
+\hypertarget{name}{%
+\section{1. Name}\label{name}}
+
+The name by which this organization shall be known in law shall be ``Trinity Reformed Church of Bloomington, Indiana, Inc.'' referred to herein as ``the Church.''
+
+\hypertarget{constitution}{%
+\section{2. Constitution}\label{constitution}}
+
+The Constitution of Trinity Reformed Church, which is subject to and subordinate to the Scriptures of the Old and New Testaments, the infallible Word of God, consists of its doctrinal standards set forth in the \emph{Westminster Confession of Faith} (WCF), together with the \emph{Larger and Shorter Catechisms}, all as adopted by the Board of Elders;\footnote{In particular, the American revisions to the WCF as adopted by the Orthodox Presbyterian Church in 1936.} the \emph{Apostles' Creed}, \emph{Nicene Creed}, \emph{Chalcedonian Creed}, and \emph{Athanasian Creed}; and the \emph{Book of Church Order (BCO) of Evangel Presbytery} and any amendments thereto from time to time (``Book of Church Order''). Whenever these Bylaws and the BCO conflict, the BCO controls.
+
+Whenever possible, these Bylaws shall be interpreted so as to be consistent with the Constitution as defined above. Freedom of conscience in the area of baptism (adult-believer baptism or paedobaptism) is guaranteed to the members, officers, and pastors of the Church.
+
+In addition, the Constitution of the Church shall consist of the Book of Church Order of Evangel Presbytery and any amendments thereto from time to time (``Book of Church Order''). Whenever the Church Bylaws and the Book of Church Order conflict, the Book of Church Order controls; however, the Church retains the perpetual right to withdraw from Evangel Presbytery by the affirmative vote of two-thirds (2/3) of voting members present at a congregational meeting specially called for that purpose. One-fourth (1/4) of the voting members on the rolls of the Church shall constitute a quorum at such a meeting.
+
+\hypertarget{organization-and-incorporation}{%
+\section{3. Organization and Incorporation}\label{organization-and-incorporation}}
+
+The organization shall be organized as a nonprofit corporation under the laws of the State of Indiana.
+
+\hypertarget{purpose-and-limitations}{%
+\section{4. Purpose and Limitations}\label{purpose-and-limitations}}
+
+The purposes of the Church are:
+
+a. To bring glory and honor to the triune God by promoting true worship, mutual edification, and gospel witness;
+
+b. To operate exclusively for religious, charitable, and educational purposes within the classifica­tion of legal charities; and no part of the net earnings of the organization shall inure to the benefit of any private stockholder or individual; and no substantial part of the activities of the organization, or any receipt of its funds, shall be utilized for any other purpose except those purposes mentioned above;
+
+c. To handle affairs pertaining to property and other temporal matters as required by the civil authorities.
+
+The Church shall not have or issue shares of stock, and no dividends shall be paid. The Church is prohibited from lending money to guarantee the obligation of a member or officer of the Church. No member or officer of the Church has any vested right, interest, or privilege in or to the assets, property, functions, or activities of the Church. The Church may contract in due course, for reasonable consideration, with its members or officers without violating this provision.
+
+\hypertarget{location-of-office}{%
+\section{5. Location of Office}\label{location-of-office}}
+
+The registered office of the Church shall be located within Indiana at the address of the Church's registered agent. The Board of Directors (also known as the Board of Elders) or a majority of the members may change the registered agent and the address of the registered office from time to time, upon filing the appropriate statement with the Indiana Secretary of State.
+
+\hypertarget{membership}{%
+\section{6. Membership}\label{membership}}
+
+a. The membership shall consist of all communicant, non-communicant, and associate members, all of whom have the privilege of pastoral oversight, instruction, and government by the Church. Com­mun­icant members are those who have been baptized, have made a credible profession of faith in Christ, and have been received into membership as provided in Section 6.b. Non-communicant members are the children of communicant members. Associate members are those believers temporarily residing in a location other than their permanent homes. Such believers may become associate members without ceasing to be members of their home Churches. An associate member shall have all the rights and privileges of communicant members with the exception of voting in a congregational meeting and holding office in the Church.
+
+b. Parents or sponsors of minor children who become members will sign the Membership Commitment Form along with the minor children. These parents and sponsors must themselves be members in good standing of the Church. When these children reach the age of eighteen, they shall meet with an Elder or Pastor of the Church and, as a testimony to their continued confession, re-sign the Membership Commitment as adults.
+
+c. A person may be received into membership by confession or reaffirmation of faith. Reception into membership may also be by a letter of transfer from another church in Evangel Presbytery, or by letter of transfer from a church of like faith and practice approved by the Board of Elders. In order to be received into membership, a person must complete the membership course, submit a Membership Application, sign a Membership Commitment, and be accepted by the Session (Board of Elders). The requirement to complete the membership course may be waived at the discretion of the Board of Elders. For an already baptized person who has not made a profession of faith, membership as a communicant is effective upon affirmative vote of the Session to accept the new member. For a person who has not been baptized, membership as a communicant is effective upon his baptism, which ordinance follows the Session's vote to accept the new member.
+
+d. Voting members of the congregation shall be only those communicant members who are at least eighteen years old and in good standing in the Church. (``Good standing'' means that a member is not presently under the censure of suspension or deposition.) Any voting member in attendance at a duly called meeting shall be entitled to one vote on matters brought before the congregation. Voting by proxy shall not be permitted.
+
+e. Members may be removed from membership at their own request by informing the Board of Elders of their intention to withdraw and the reasons therefore. If a member requests to withdraw because of specific problems or disappointments with the Church, the Board of Elders shall attempt to resolve those matters so that the member may remain in the Church and enjoy greater fruitfulness and personal spiritual growth. If the Board of Elders is unable to resolve those matters, it shall offer to assist the member in locating a church of like faith and practice that can respond more effectively to his gifts and needs. If it appears to the Board of Elders that a member has requested removal merely to avoid church discipline, that request shall not be given effect until the disciplinary process has been properly concluded (see Matt. 18:12--20; Bylaw §16; Guidelines on Church Discipline).
+
+f. Members may also be removed from member­ship by order of the Board of Elders when they: persis­tently, over an extended period of time, and without adequate reason absent themselves from the stated services of the Church; unite with a church of another denomination; cannot be found for a period greater than one year; or are removed by excommunication for persistent impenitence (see Bylaw §16; Guidelines on Church Discipline). Non-communicant members may be removed from membership with their parents or when they reject the covenantal responsibility of submission to home or Church and neglect the ongoing exhort­a­tion of the Board of Elders to profess faith in Christ.
+
+\hypertarget{elders-and-deacons}{%
+\section{7. Elders and Deacons}\label{elders-and-deacons}}
+
+a. Elders and Deacons must be male voting members (and meet Biblical qualifications). In order to be eligible for confirmation, a man shall have been a member in good standing in the Church for at least one year, shall have received appropriate training under the direction or with the approval of the Board of Elders, and shall have served the Church in functions requiring responsible leadership.
+
+b. Elders, individually and jointly with the Pastors, are to lead the Church in the service of Christ. They are to watch diligently over the people committed to their charge to prevent corruption of doctrine or morals. Evils that they cannot correct by private admoni­tion they should bring to the notice of the Board of Elders. They should visit the people, especially the sick, instruct the ignorant, comfort the mourning, and nourish and guard the children of the covenant. They should pray with and for the people. They should have particular concern for the doctrine and conduct of the Pastors and help them in their labors.
+
+c. Deacons shall show forth the compassion of Christ in a manifold ministry of mercy toward the saints and strangers on behalf of the Church. As delegated and directed by the Board of Elders, they shall minister to the temporal needs of members and friends, and shall keep in proper repair the Church edifice and other buildings and all physical property belonging to the congregation.
+
+d. The Board of Elders reserves the right to limit the number of men for each office as they deem to be in the best interest of the Church. Any voting member may propose to the Board of Elders nominations for the offices of Elder and Deacon. The Board of Elders shall certify those nominees whom, upon examination, it judges to possess the neces­sary qualifications for office. An Elder or Deacon who had been previously certified but who resigned from or was divested of the office must be re-certified. At least 30 days preceding the date appointed for the confirmation, the Board of Elders shall announce to the Church in writing the names of those it has certified and recommended for confirmation. This will allow anyone who has serious reservations about any nominee to approach the Board of Elders for reconsideration. Confirmation shall be from those recommended by the Board of Elders­. Vot­ing on the confirmation of Elders and Deacons shall be done by secret ballot, and each vote shall be cast either in favor of or against the confirmation of each candidate, and those candidates receiving the vote of two-thirds (2/3) in favor of their confirmation shall be deemed elected. Elders and Deacons shall be elected for three-year terms of service. The term of service for either a newly-elected or reactivated Elder or Deacon shall begin at the beginning of the calendar year following his election by the congregation. He shall attend meetings of the Board of Elders or Board of Deacons between the time of his election and the subsequent January stated meeting in an ex officio capacity. The terms of Elders and Deacons who are rotating off their respective Boards shall end on December 31 of the appropriate year. If an Elder or Deacon is elected at a meeting other than the annual congregational meet­ing, his regular term shall expire at the time of the second annual congregational meeting following his confirmation. Any Elder or Deacon who has served two consecutive terms must take a one-year sabbatical before serving again in that particular office.
+
+e. If a ruling Elder or Deacon should lose the confidence of his flock and become unacceptable to a majority thereof, the Church he serves may, by majority vote at a regularly called congregational meeting, request the Session to dissolve the official relationship between the Church and the officer without censure. The Session, after conference with the ruling Elder or Deacon, and after careful consideration, may use its discretion as to dissolving the official relationship. In either case the Session shall report its action to the congregation. If the Session fails or refuses to report to the congregation within sixty (60) days from the date of the congregational meeting or if the Session reports to the congregation that it declined to dissolve such relationship, then any member or members in good standing may file a complaint against the Session in accordance with the provisions of BCO 46.
+
+An officer may also resign from his office, likewise without censure. In the case of an offense in doctrine or practice, he may also be divested of his office by church disciplinary procedures.
+
+\hypertarget{pastor}{%
+\section{8. Pastor}\label{pastor}}
+
+a. It is the charge of the Pastor to feed and tend the flock as Christ's Minister and with the other Elders to lead them in all the service of Christ. It is his task to conduct the public worship of God; to pray for and with Christ's flock as the mouth of the people unto God; to feed the flock by the public reading and preaching of the Word of God, according to which he is to teach, convince, reprove, exhort, comfort, and evangelize, expounding and applying the truth of Scripture with ministerial authority, as a diligent workman approved by God; to administer the sacraments; to bless the people from God; to shepherd the flock and minister the Word according to the particular needs of groups, families, and individuals in the congregation, catechizing by teaching plainly the first principles of the oracles of God to the baptized youth and to adults who are yet babes in Christ, visiting in the homes of people, instructing and counseling individuals, and training them to be faithful servants of Christ; to minister to the poor, the sick, the afflicted, and the dying; and to make known the gospel to the lost.
+
+b. If the congregation chooses to elect an Associate Pastor, his relationship to the Church shall be determined by the congregation. If the Board of Elders calls an Assistant Pastor, his relationship with the Church shall be determined by the Board of Elders. The assistant and Associate Pastors shall assist the Senior Pastor in fulfilling the duties assigned to him in Section 8.a., and shall be under his supervision and authority as head of staff by virtue of his office.
+
+c. The Pastor and Associate Pastor shall be elected by the congregation as follows:
+
+\(1\) The Session shall appoint a pulpit committee which may be composed of male members from the congregation at large or the Session, or a mixture of Session members and male members at large. This pulpit committee shall be charged both with presenting pastoral candidates to the Session, and with providing for the ministry of the Word to the congregation during the committee's search process. If the pulpit committee is not identical with the Session, invitations to preach to the congregation shall be issued only with the approval of the Session.
+
+\(2\) The pulpit committee shall, after consultation and deliberation, recommend to the Session a pastoral candidate who, in its judgment, fulfills the Constitutional requirements of that office and is most suited to be profitable to the spiritual interests of the congregation. The Session, once it receives the candidate recommended by the pulpit committee, shall order a congregational meeting to convene to vote on the presented candidate; it shall, however, always be the duty of the Board of Elders to convene the congregation in accordance with Bylaw §11 and to conduct the meeting in accordance with that Section. In particular, the congregation should elect a Minister or Ruling Elder of Evangel Presbytery to preside, but if this be infeasible, they may elect any male member of that church.
+
+\(3\) When the meeting has been convened with prayer, the Moderator shall give an exhortation to the congregation suited to the purpose of its coming together. The Moderator shall then put the question, ``Are you ready to proceed to the election of a Pastor?'' If the members declare themselves ready, the Moderator shall call for the nomination.
+
+\(4\) If the vote is unanimous or nearly so, a call shall be drawn in due form. If there is a sizeable minority, the Moderator shall address the congregation seeking to persuade the minority to concur in the call. A ballot shall then be taken to determine the number concurring in the call. If there is still a sizeable minority unwilling to concur, the Moderator shall advise the majority and the minority concerning their mutual responsibilities. A final ballot shall then be taken, and if a majority shall insist on prosecuting the call, the Moderator shall proceed to draft a call in due form, and to have it subscribed by the electors, certifying at the same time in writing the number of those who do not concur in the call, and any facts of importance, all of which proceedings shall be laid before the Presbytery, together with the call.
+
+\begin{quote}
+If at any point in the meeting the congregation decides not to call a Pastor, it may refer the matter back to the pulpit committee, or to the Board of Elders, as the case may be, for report to a later meeting, or take such other action as may be appropriate.
+\end{quote}
+
+\(5\) Please refer to BCO 22.6 for the form of call.
+
+\(6\) The Moderator shall certify as to the validity of the meeting of the congregation and that the call as presented has been prepared in all respects as directed by the vote of the congregation.
+
+\(7\) All other steps pertaining to the prosecuting of a call to a Pastor shall proceed according to the Evangel Presbytery Book of Church Order, Chapter 22.
+
+d. Associate and Assistant Pastors shall serve as ex officio members of the Board of Elders and Deacons, having voice but no vote.
+
+e. The Pastor may resign his position upon thirty days' written notice. Such resignation must be tendered to the Presbytery, and the Church's commissioners shall then show cause, if there be any, why the Presbytery should not accept the resignation. Further process shall then be taken by the Presbytery as described in the Evangel Presbytery BCO 25.1.
+
+f. If a significant portion of the congregation believes that the Pastor's services are no longer edifying to the congregation, and if private efforts to remedy the situation are unsuccessful, the ministerial relationship may be dissolved as follows: (1) A special congregational meeting shall be called as provided in the Bylaw on congregational meetings; (2) Those requesting the Pastor's resignation shall be allowed to state the reasons for their request, and the Pastor shall be given the opportunity to respond, as shall other members of the Church; (3) The meeting shall be adjourned to a time not sooner than one week later and not later than two weeks later; (4) At the next congregational meeting, further appropriate debate shall be allowed, and a vote shall be taken; (5) Upon a two-thirds (2/3) vote in favor of dissolution, the Church's commissioners shall present its request and cause for dissolution to the Presbytery (see Evangel Presbytery BCO 25.1); (6) If the ministerial relationship is dissolved, the Church shall provide the Pastor with at least six months severance pay, and shall consider providing such other assistance as is necessary for his needs and the needs of his family while he seeks other employment.
+
+\hypertarget{board-of-elders-board-of-directors}{%
+\section{9. Board of Elders (Board of Directors)}\label{board-of-elders-board-of-directors}}
+
+a. The Board of Elders is the governing body (Board of Directors) of the Church and consists of its Senior Pastor, active Ruling Elders, and, ex officio, Associate and Assistant Pastors. The Board of Elders shall have the power and authority to make rules and regulations not inconsistent with the laws of the State of Indiana, the Constitution, and these Bylaws. The Board of Elders shall manage the business affairs of the corporation, oversee all matters concerning the conduct of public worship, and it shall concert the best measures for promoting the spiritual growth and evangel­istic witness of the congregation. It shall receive, dismiss, and exercise discipline over the members of the Church, supervise the activities of the Board of Deacons and all other organizations of the congregation, and have final authority over the use of the Church property.
+
+b. The Moderator (Chairman) of the Board of Elders shall be the Senior Pastor, who may appoint an acting Moderator to function during his absence. The Board of Elders shall choose its own Clerk (Secretary) annually from among its members. The Board of Elders shall also appoint a treasurer, who must be a voting member of the Church and shall ordinarily be a Deacon. If the Elders appoint a treasurer who is not a Deacon, then the treasurer shall serve as an ex officio member of the Board of Deacons.
+
+c. The Board of Elders shall have final authority for affairs pertaining to property and other temporal matters as required by civil law for nonprofit corporations. In particular, the Board of Elders shall be responsible for the acquisition and disposition of Church property, which includes the management of its financial resources. Neither the Board of Elders nor its delegates shall have the power to buy, sell, mortgage, pledge or in any manner encumber any Church property worth more than \$50,000, nor to incur any indebted­ness exceeding the sum of \$50,000, unless first authorized to do so at a congregational meeting, either through the adoption of the annual budget or by special action of the congregation. The Board of Elders may delegate to the Board of Deacons or to other communicant members such of these responsibilities as it deems approp­riate.
+
+d. The Board of Elders shall meet at least quarterly and shall convene at the call of the Moderator, any two members of the Board of Elders, or upon its own adjournment. Either oral or written notice, including the date, time, and place of a meeting, shall be given at least two days before a meeting. If mailed, notice shall be deemed to be effective the day after the letter is postmarked. Notice may be waived either orally or in writing. An Elder's or Pastor's attendance at a meeting waives his right to object to lack of notice or defective notice of the meeting, unless at the beginning of the meeting (or promptly upon arrival), he objects to holding the meeting or transacting business at the meeting, and does not vote for or assent to action taken at the meeting.
+
+e. A quorum is two Elders, if there are three or more, or one ruling Elder, if there are fewer than three, together with the Pastor. In no case may the Board of Elders conduct its business with fewer than two present who are entitled to vote. When the Church is without a Pastor, the Moderator of the Session shall be either a Minister appointed for that purpose by the Presbytery, or one invited by the Session to preside on a particular occasion. When it is inconvenient to procure such a Moderator, the Session may elect one of its own members to preside. In judicial cases, the Moderator shall be a Minister of the Presbytery to which the Church belongs.
+
+f. The act of a majority present at a Board of Elders meeting at which a quorum is present (when the vote is taken) shall be the act of the Board of Elders. A Pastor or Elder shall be deemed to have approved of an action taken if he is present at a meeting of the Board of Elders unless: (1) he objects at the beginning of the meeting (or promptly upon arrival) to holding it or transacting business at the meeting; or (2) his dis­sent or abstention from the action taken is entered in the minutes of the meeting; or (3) he did not approve the action and he delivers written notice of dissent or abstention to the presiding officer of the meeting before its adjournment or immediately after adjournment of the meeting.
+
+g. If at any time there are fewer than three persons on the Board of Elders, the congregation may confirm from the Board of Deacons and, if necessary, from among the voting members, men who will temporarily serve as directors of the Church for the purpose of carrying out any required corporate business. The terms of such temporary directors shall expire when sufficient Elders have been confirmed and ordained to bring the number of the Board of Elders to three or more.
+
+h. The Board of Elders may meet by means of a conference telephone call or similar communications equipment, provided all persons entitled to participate in the meeting received proper notice of the telephone meeting, and provided all persons participating in the meeting can hear each other at the same time. A member participating in a conference telephone meeting is deemed present in person at the meeting. The Moderator of the meeting may establish reasonable rules as to conducting business at any meeting by phone.
+
+i. The Moderator shall be the Chairman of the Board of Directors and the principal executive officer (president) of the corporation. While performing his moderatorial duties, the Moderator shall be subject to the control of the Board of Elders, and shall in general supervise and control, in good faith, all of the business and affairs of the Church. The Moderator shall, when present, preside at all meetings of the members and of the Board of Elders, and shall conduct such meetings so as to facilitate free and respectful debate and decision making. The Moderator may sign, with the Secretary or any other proper officer of the Church that the Board of Elders has authorized, corporation deeds, mortgages, bonds, contracts, or other Board of Elders authorized instruments.
+
+j. The Vice-Moderator (Vice-Chairman), shall perform, in good faith, the Moderator's duties if the Moderator is absent, dies, is unable or refuses to act. If the Vice-Moderator acts in the absence of the Moderator, the Vice-Moderator shall have all of the powers of and be subject to all the restrictions upon the Moderator. If there is no Vice-Moderator or the Vice Moderator is unable or refuses to act, then the Secretary shall perform the moderatorial duties. In any case, the regulations of paragraph 9.e. apply.
+
+k. The Clerk shall be the Secretary of the Church and shall in good faith: (1) create and maintain one or more books for the minutes of the proceedings of the members and of the Board of Elders; (2) provide that all notices are served in accordance with these Bylaws or as required by law; (3) be custodian of the Church and corporate records; (4) subscribe the minutes of all meetings of the members and of the Board of Elders; (5) when requested or required, authenticate any records of the Church; (6) keep a current register of the post office address of each member; and (7) in general perform all duties incident to the office of Secretary and any other duties that the Moderator or the Board of Elders may assign to the Secretary.
+
+l. The treasurer shall: (1) have charge and custody of and be responsible for all funds and securities of the Church; (2) receive and give receipts for moneys due and payable to the Church from any source, and deposit all moneys in the Church's name in banks, trust companies, or other deposit­ar­­ies that the Board of Elders shall select; (3) submit the books and records to a Certified Public Accoun­tant or other accountant as directed by the Board of Elders; and (4) in general perform all of the duties inci­dent to the office of treasurer and any other duties that the Moderator or Board of Elders may assign to the treasurer. If required by the Board of Elders, the treasurer shall give a bond for the faithful perfor­mance of the treasurer's duties and as insurance against the misappropriation of funds. If a bond is required, it shall be in a sum and with the surety or sureties that the Board of Elders shall determine.
+
+m. The Board of Elders may establish such committees as it deems necessary for the work of the Church.
+
+\hypertarget{board-of-deacons}{%
+\section{10. Board of Deacons}\label{board-of-deacons}}
+
+The Board of Deacons shall oversee the ministry of mercy in the Church and shall collect and dis­perse funds for the relief of the needy. Other forms of service for the Church may also be commit­ted to the Deacons. The Board of Deacons shall choose its own officers from its membership, submitting its choice for Moderator to the Session for approval.
+
+\hypertarget{congregational-meetings}{%
+\section{11. Congregational Meetings}\label{congregational-meetings}}
+
+a. There shall be two annual meetings of the Church each year. One meeting shall be held in May of each year at a date, time, and place to be determined by the Board of Elders for the purpose~of adopting an annual budget to begin June 1 of each year and end May 31 of each following year. One meeting shall be held in October at a date, time, and place to be determined by the Board of Elders for the purpose of confirming Elders and Deacons and presenting annual reports and transacting any other business as may come before the meeting.
+
+b. Special meetings of the Church shall be called at a date and location to be determined by the Board of Elders whenever the Board of Elders deems it to be in the best interests of the Church or when requested in writing to do so by one-fourth (1/4) of the voting members of the Church in good standing.
+
+c. The date, time, and location of all congregational meetings must be announced orally and in written form at least two (2) Lord's Days prior to the time set for the meeting. The day of the meeting itself may not be counted as one of the two required Lord's Days. (For example, a meeting scheduled for Sunday, October 25 must be announced no later than Sunday, October 11.) If the voting members adjourn any congregational meeting to a different date, time, or place, notice of a new date, time, and place need not be given if the new date, time, and place is announced before adjournment. A member entitled to a notice may waive notice of the meeting (or any notice required by laws of the State of Indiana or these Bylaws) by a written notice signed by the member. The member must send the notice of waiver to the Church (either before or after the date and time stated in the notice) for inclusion in the minutes or filing with the Church records.
+
+d. The purpose of a meeting shall be announced in advance if it involves: a proposed amendment to the Bylaws or articles of incorporation; the confirmation or removal of officers; the calling or removal of the Pastor or an Associate Pastor; the acquisition or disposition of property worth more than \$50,000; the dissolution of the Church; or a question regarding the Church's denominational affiliation. When a meeting is called for the transaction of specific matters of business, no business shall be conducted except that which is stated in the notice.
+
+e. A member's attendance at a meeting: waives the member's right to object to lack of notice or defective notice of the meeting, unless the member at the beginning of the meeting objects to holding the meeting or transacting business at the meeting; and, waives the member's right to object to consideration of a particular matter at the meeting that is not within the purpose or purposes described in the meeting notice, unless the member objects to considering the matter when it is presented.
+
+f. One-fourth (1/4) of the voting members shall constitute a quorum at congregational meetings. Unless provided otherwise in these Bylaws, a majority vote of votes cast, a quorum being present, is sufficient to decide any matter.
+
+g. The Moderator of the Board of Elders (generally the Pastor) shall be the Moderator of congregational meetings by virtue of his office. If it should be infeasible or inexpedient for him to preside, or if there is no Pastor, the Session shall appoint one of their number to call the meeting to order and to preside until the congregation shall elect their presiding officer, who may be a Minister of Evangel Presbytery or any male member of that particular Church.
+
+\begin{quote}
+A Clerk shall be elected by the congregation to serve at that meeting or for a definite period, whose duty shall be to keep correct minutes of the proceedings and of all business transacted and to preserve these minutes in a permanent form, after they have been attested by the Moderator and the Clerk of the meeting. He shall also send a copy of these minutes to the Session of the Church.
+\end{quote}
+
+\hypertarget{church-records}{%
+\section{12. Church Records}\label{church-records}}
+
+a. The Board of Elders shall keep the following records: (1) minutes of its meetings, including a record of the administration of the sacraments and changes in the membership of the congregation; (2) minutes of the meetings of the congregation; (3) rolls of the members in the congregation (communicant, non-communicant, and voting), with the dates of their reception; (4) resolutions adopted by the Board of Elders; (5) appropriate accounting records; (6) its articles or restated articles of incorporation and all amendments to them currently in effect; and (7) its bylaws or restated bylaws and all amendments to them currently in effect.
+
+b. A member shall be entitled to inspect and copy, at a reasonable time and location specified by the Board of Elders, any of the Church records described above, provided the Board of Elders finds that the member has a proper purpose and is acting in good faith. The Board of Elders may limit access to any records that contain confidential information about a particular person or persons.
+
+\hypertarget{biblical-counseling}{%
+\section{13. Biblical Counseling}\label{biblical-counseling}}
+
+a. All Christians struggle with sin and the effect it has on our lives and our relationships (see Rom. 3:23; 7:7--25). Whenever a Christian is unable to overcome sinful attitudes or behaviors through private efforts, God commands that he should seek assistance from other members, and especially from the Pastor and Elders, who have the responsibility of providing pastoral coun­sel­ing and oversight (see Rom. 15:14; Gal. 6:1--2; Col. 3:16; 2 Tim. 3:16--4:2; Heb. 10:24--25; 13:17; James 5:16). Therefore, this Church encourages and enjoins its members to make confession to and seek counsel from each other and especially from our Pastors, Elders, and other pastoral counselors.
+
+b. We believe that the Bible provides thorough guidance and instruction for faith and life. Therefore, our counseling shall be based on Scriptural principles rather than those of secular psychology or psychiatry. Neither the pastoral nor the lay counselors of this Church are trained or licensed as psycho­therapists or mental health professionals, nor should they be expected to follow the methods of such specialists.
+
+c. Although some members of the Church work in professional fields outside the Church, when serving as pastoral or lay counselors within the Church they do not provide the same kind of professional advice and services that they do when they are hired in their professional capacities. Therefore, members who have significant legal, financial, medical, or other technical questions should seek advice from independent professionals. Our pastoral and lay counselors shall be available to cooperate with such advisors and help members to consider their advice in the light of relevant Scriptural principles.
+
+\hypertarget{confidentiality}{%
+\section{14. Confidentiality}\label{confidentiality}}
+
+a. The Bible teaches that Christians should carefully guard any personal and private information that others reveal to them. Protecting confidences is a sign of Christian love and respect (see Matt. 7:12). It also discourages harmful gossip (Prov. 16:28; 26:20), invites confes­sion (see Prov. 11:13; 28:13; James 5:16), and encourages people to seek needed counseling (see Prov. 20:19; Rom. 15:14). Since these goals are essential to the ministry of the gospel and the work of this Church, all members are expected to refrain from gossip and to respect the confi­dences of others. In particular, our Pastor and Elders shall carefully protect all information that they receive through pastoral counseling, subject to the following guidelines.
+
+b. Although confidentiality is to be respected as much as possible, there are times when it is appropriate to reveal certain information to others. In particular, when the Pastors and Elders of this Church believe it is Biblically necessary, they may disclose confidential information to appropriate people in the following circumstances:
+
+\(1\) When a Pastor or Elder is uncertain of how to counsel a person about a particular problem and needs to seek advice from other Pastors or Elders in this Church or, if the person attends another church, from the Pastors or Elders of that church (see Prov. 11:14; 13:10; 15:22; 19:20; 20:18; Matt. 18:15--17);
+
+\(2\) When the person who disclosed the information or any other person is in imminent danger of serious harm unless others intervene (see Prov. 24:11--12);
+
+\(3\) When a person refuses to repent of sin and it becomes necessary to institute disciplinary proceedings (see Matt. 18:15--20 and Bylaw §16) or seek the assistance of individuals or agencies outside this Church (see, e.g., Rom. 13:1--5); or
+
+\(4\) When required by law to report suspected child abuse.
+
+c. Scripture commands that confidential information is to be shared with others only when a problem cannot be resolved through the efforts of a small group of people within the Church (Matt. 18:15--17). Therefore, except as provided in Bylaw §14.b., a Pastor or Elder may not disclose confidential information to anyone outside this Church without the approval of the Board of Elders or the consent of the person who originally disclosed the information. The Board of Elders may approve such disclosure only when it finds that all internal efforts to resolve a problem have been exhausted (see, e.g., 1 Cor. 6:1--8) and the problem cannot be satisfactorily resolved without the assistance of individuals or agencies outside this Church (see, e.g., Rom. 13:1--5).
+
+d. The Pastors and Elders may, but need not, provide counselees with written notice of these confidentiality provisions, but these provisions shall be in effect regardless of whether such notice is given.
+
+\hypertarget{conflict-resolution}{%
+\section{15. Conflict Resolution}\label{conflict-resolution}}
+
+a. This Church is committed to resolving in a Biblical manner all disputes that may arise within our body. This commitment is based on God's command that Christians should strive earnest­ly to live at peace with one another (see Matt. 5:9; John 17:20--23; Rom. 12:18; and Eph. 4:1--3) and that when disputes arise, Christians should resolve them according to the principles set forth in Holy Scripture (see Prov. 19:11; Matt. 5:23--25; 18:15--20; 1 Cor. 6:1--8; Gal. 6:1). We believe that these commands and principles are obligatory on all Christians and absolutely essential for the well-being and work of the Church. Therefore, any and all dis­putes in this Church shall be resolved according to Biblical principles, as provided in this Bylaw.
+
+b. When a member of this Church has a conflict with, or is concerned about the behavior of another member, he shall attempt to resolve the matter as follows. (1) The offended or con­cerned person shall prayerfully examine himself and take responsibility for his contribution to a problem (Matt. 7:3--5), and he shall prayerfully seek to discern whether the offense is so serious that it cannot be overlooked (Prov. 19:11; see also Prov. 12:16; 15:18; 17:14; 20:3; Eph. 4:2; Col. 3:13; 1 Pet. 4:8). (2) If the offense is too serious to overlook, the offended or concerned person shall go, repeatedly if necessary, and talk to the offender in an effort to resolve the matter personally and privately, having first confessed his own wrongdoing (Matt. 18:15). (3) If the offender will not listen and if the problem is too serious to overlook, the offended or concerned person shall return with one or two other people who will attempt to help the parties resolve their differences (Matt. 18:16); these other people may be members or officers of the Church or of Evangel Presbytery, other respected Christians in the community, or trained mediators or arbitrators (conciliators) from a Christian concilia­tion ministry. At the request of either party to the dispute, the Church shall make every effort to assist the parties in resolving their differences and being reconciled.
+
+c. Conflicts involving doctrine or church discipline shall be resolved according to the procedures set forth in the Guidelines on Church Discipline.
+
+d. Employment disputes shall be resolved according to the procedures set forth in the \emph{Employee Policy Manual} of this Church as adopted by the Board of Elders.
+
+e. If a dispute arises within the Church or between a member and the Church and cannot be resolved through the internal procedures described above, or through intervention or mediation by Evangel Presbytery, it shall be resolved as follows:
+
+\begin{quote}
+\(1\) The dispute shall be submitted to mediation and, if necessary, legally binding arbitration in accordance with the \emph{Rules of Procedure} of the Institute for Christian Conciliation, and judgment upon an arbi­tra­tion award may be entered in any court otherwise having jurisdiction.
+
+\(2\) All mediators and arbitrators shall be in agreement with the Constitution and Bylaws of the Church and our basic form of government, unless this requirement is modified or waived by all parties to the dispute. If a dispute involves an attempted revision of the Constitution or Bylaws of the Church or our form of government, the mediators and arbitrators shall be in agreement with those documents as they existed prior to the attempted revision.
+
+\(3\) If a dispute submitted to arbitration involves a decision reached by an official judicatory (court or ruling body) of this Church, the arbitrators shall uphold the judicatory's decisions on matters of doctrine and church discipline.
+
+\(4\) This Section covers the Church as a corporate entity and its agents, including its pastors, officers, staff, and volunteers with regard to any actions they may take in their official capacities.
+
+\(5\) This Section covers any and all disputes or claims arising from or related to church membership, doctrine, policy, practice, counseling, discipline, decisions, actions, or failures to act, including claims based on civil statute or for personal injury.
+
+\(6\) By signing the Christian conciliation commitment, members agree that these methods shall provide the sole remedy for any dispute arising against the Church and its agents, and they waive their right to file any legal action against the Church in a civil court or agency, except to enforce an arbitration decision.
+
+\(7\) If a dispute or claim involves an alleged injury or damage to which the Church's insurance applies, and if the Church's insurer refuses to submit to mediation or arbitration as described in this Section, either the Church or the member alleging the injury or damage may declare that this Section is no longer binding with regard to that part of the dispute or claim to which the Church's insurance applies.
+\end{quote}
+
+\hypertarget{church-discipline}{%
+\section{16. Church Discipline}\label{church-discipline}}
+
+Church discipline shall be carried out according to the Guidelines for Church Discipline as adopted by the Board of Elders.
+
+\hypertarget{ownership-and-distribution-of-property}{%
+\section{17. Ownership and Distribution of Property}\label{ownership-and-distribution-of-property}}
+
+a. The Church shall hold, own, and enjoy its own personal and real property, without any right of reversion to another entity, except as provided in these Bylaws.
+
+b. ``Dissolution'' means the complete disbanding of the Church so that it no longer functions as a congregation or as a corporate entity. Upon the dissolution of the Church, its property shall be applied and distributed as follows:
+
+\(1\) All liabilities and obligations of the Church shall be paid and discharged or adequate provision shall be made therefore;
+
+\(2\) Assets held by the Church upon con­di­tion requiring return, transfer, or conveyance, which condition occurs by reason of the dissol­ution, shall be returned, transferred, or conveyed in accordance with such requirements;
+
+\(3\) Assets received and not held upon a condition requiring return, transfer, or conveyance by reason of the dissolution, shall be transferred or conveyed to one or more domes­tic or foreign corpora­tions, societies, or organizations that qualify as exempt organiza­tions under Section 501(c)(3) of the Internal Revenue Code of 1954 (or the corresponding provi­sion of any future United States Inter­nal Revenue Law), and are engaged in activities sub­stan­tially similar to those of the corpora­tion; this distribution shall be done pursuant to a plan adopted by the Board of Elders, provided that no assets are distributed to any organ­iza­tion governed by a member of the Board of Elders; and
+
+\(4\) Any assets not other­wise disposed of shall be disposed of by a court of competent jurisdiction of the county in which the principal office of the corporation is then located, for such purposes and to such organizations as said court shall determine.
+
+\hypertarget{indemnification-of-officers}{%
+\section{18. Indemnification of Officers}\label{indemnification-of-officers}}
+
+a. The Board of Elders may choose to indemnify and advance the Church-related expenses of any officer, employee, or agent of the Church.
+
+b. Subject to the provisions of paragraph c.~of this Section, the Church shall indemnify any Elder or Deacon or former Elder or Deacon of the Church against claims, liabilities, expenses, and costs necessarily incurred by him in connection with the defense, compromise, or settlement of any action, suit, or proceeding, civil or criminal, in which such person is made a party by reason of being or having been an Elder or Deacon, to the extent not otherwise compensated, indemnified, or reimbursed by insurance, if:
+
+\begin{quote}
+\(1\) The conduct of the Elder or Deacon was in good faith;
+
+\(2\) The Elder or Deacon reasonably believed that his conduct was in the best interests of the Church, or at least not opposed to its best interests; and
+
+\(3\) In the case of any criminal proceeding, the Elder or Deacon had no reasonable cause to believe that his conduct was unlawful.
+\end{quote}
+
+c. The Church may not indemnify an Elder or Deacon in connection with a proceeding brought against him by or in the right of the Church, in which he was adjudged liable to the Church, or where the Elder or Deacon is charged with receiving an improper personal benefit and he is adjudged liable on that basis.
+
+\hypertarget{committees}{%
+\section{19. Committees}\label{committees}}
+
+When the Board of Elders deems it advisable, it may designate the Chairman of any committee or working group of the Church. The Chairman of each committee shall appoint members to the committee in consultation with the Board of Elders. Individuals may serve on the committee for three consecutive years. Following such a three-year term, an individual may return to service on a committee only after having taken one year leave of absence from that particular committee. The Senior Pastor, or his designee, is an ex officio member of all committees. All other operations of the committee are to be determined by the current edition of \emph{Robert's Rules of Order}.
+
+\hypertarget{rules-of-order}{%
+\section{20. Rules of Order}\label{rules-of-order}}
+
+All meetings of the Church, the Board of Elders, and its various boards and committees shall be conducted pursuant to the latest edition of \emph{Robert's Rules of Order.}
+
+\hypertarget{amendment-of-bylaws}{%
+\section{21. Amendment of Bylaws}\label{amendment-of-bylaws}}
+
+These Bylaws may be amended or repealed only by the affirmative vote of two-thirds (2/3) of the votes cast at a duly-called meeting of the Church called for such purposes.
+
+\hypertarget{guidelines-for-church-discipline}{%
+\chapter{Guidelines for Church Discipline}\label{guidelines-for-church-discipline}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Church discipline shall be instituted according to these Bylaws.
+\item
+  Mutual accountability and discipline within the Church is commanded by God in Scripture and is one of the most important responsibilities of a true Church of Jesus Christ (see Matt. 18:12--20; Rom. 16:17; 1 Cor. 5:1--13; 2 Cor. 2:5--11; Gal. 2:11--14; Eph. 5:11; 1 Thess. 5:14; 2 Thess. 3:6--15; Tim. 1:20; 5:19--20; 2 Tim. 3:1--5; Titus 3:10; Heb. 10:24--30; 12:5--17; 2 John 7--11; Rev.~3:19).
+\item
+  Church (ecclesiastical) discipline is the exercise of that authority that the Lord Jesus Christ has committed to the visible Church for the preservation of its purity, peace, and good order.\textsuperscript{1} All members of the Church, both communicant and non-communicant, are under the care of and subject to the discipline of the Church. The ultimate goal of all discipline is to train Christians to be self-disciplined so that they may share in the holiness of God (see Heb. 12:7--13).
+\item
+  Discipline may be either administrative or judicial. Administrative discipline is concerned with the maintenance of good order in the government of the Church in other than judicial cases. Its purpose is to see that all rights are preserved and all obligations are fully discharged. Judicial discipline is concerned with the prevention and correction of offenses, an offense being defined as anything in the doctrine or practice of a member of the Church that is contrary to the Word of God. The purpose of judicial discipline is: (1) to guard and preserve the honor of God (see Rom. 2:24; 1 Cor. 10:31); (2) to protect the purity of the Church and to guard other Christians from being tempted, misled, divided, or otherwise harmed (see 1 Cor. 5:6); and (3) to restore fallen Christians to usefulness to God and fellowship with His Church (see Matt. 18:12--14; 2 Cor. 2:5--11; 7:8--10; Gal. 6:1--2).
+\item
+  Discipline involves three components or phases: (1) God commands all Christians to make every effort, with His help, to discipline themselves and lead godly lives (see Eph. 4:25--5:6; 2 Tim. 1:7; 2 Pet. 1:5--11); (2) if a Christian fails to discipline himself and is trapped in a sin, God commands other brothers and sisters in Christ to lovingly confront, counsel, and encourage him toward repentance (see Bylaw §15.b; Matt. 18:15--16; Gal. 6:1--2; Col. 3:16; Heb. 10:24--25); (3) if these personal and informal efforts do not correct an offense, God commands the Church leaders to intervene and exercise their ecclesiastical authority to resolve the matter, protect the Church, and, if possible, restore the offender (see Matt. 18:17--20; 1 Cor. 5:1--13; 2 Tim. 4:2; Heb. 13:17). This third phase, which may be referred to as judicial or formal discipline, involves a judicial proceeding (trial) before the Board of Elders, or their designated representatives. Such a trial shall be carried out according to the following procedures, which are designed to provide due process for the offender and promote a just resolution.
+\item
+  When an offense is personal and known only to a few individuals, discipline may not be instituted until there has been a good faith effort to resolve the matter privately and informally, yet a Church Court may judicially investigate personal offenses as if general, when the interests of religion seem to demand it (see Bylaw §15.b and BCO 34:5--6). No charge may be accepted if it is filed more than two years after the commission of the alleged offense, unless it appears that unavoidable impediments have prevented an earlier filing of the charge. Every charge must be submitted to the Board of Elders in writing. A person may be censured for filing a charge that the Board of Elders determines to be without merit (see Deut. 19:16--21).
+\item
+  An offense that is serious enough to warrant judicial discipline and a trial is: (1) an offense in the area of conduct and practice that seriously disturbs the peace, purity, and/or unity of the Church; (2) an offense in the area of doctrine for a non-ordained member that would constitute a denial of a credible profession of faith as reflected in his membership vows; or (3) an offense in the area of doctrine for an ordained officer that would constitute a violation of the system of doctrine contained in the Holy Scriptures as that system is set forth in our Constitution (see Bylaw §2). When the Board of Elders, or their designated representatives, convenes to determine whether an offense has occurred and to administer censure, it shall be referred to as a ``judicatory.''
+\item
+  Just as a good shepherd will go after a sheep that has wandered from the flock (Matt. 18:12--14; Ezek. 34:4, 8, 16), so shall the Elders and members of this Church seek to restore a wandering member to the Lord through Biblical discipline. Therefore, discipline may be instituted or continued either before or after a member seeks to withdraw from membership if the Board of Elders determines that such discipline may serve to guard and preserve the honor of God, protect the purity of the Church, or restore the wandering member to the Lord (see §4). While the Church cannot force a withdrawing person to remain in this congregation, the Church has the right and the responsibility to encourage restoration, to bring the disciplinary process to an orderly conclusion, and to make a final determination as to the person's membership status at the time withdrawal is sought or acknowledged. In doing so, the Board of Elders, at its discretion, may temporarily suspend further disciplinary proceedings, dismiss any or all charges pending against the accused, or proceed with discipline and pronounce an appropriate censure as provided in Sections 19, 20, and 21.
+\item
+  When a charge is laid before the Session, it shall be reduced to writing, and nothing shall be done at the first meeting of the Court, unless by consent of parties, except to appoint a prosecutor, and order the indictment to be drawn, a copy of which, with the witnesses then known to support it, shall be served on the accused, and to cite all parties and their witnesses to appear and be heard at another meeting, which shall not be sooner than ten days after such citation. In drawing the indictment, the times, places, and circumstances should, if possible, be particularly stated, that the accused may have an opportunity to make his defense. It is appropriate that with each citation the Moderator or Clerk call the attention of the parties to the Rules of Discipline and assist the parties to obtain access to them.
+\item
+  The citation shall be issued and signed by the Moderator or Clerk, by order and in the name of the Court; he shall also issue citations to such witnesses as either party shall nominate to appear on his behalf. Indictments and citations shall be delivered in person or in another manner providing verification of the date of receipt. Compliance with these requirements shall be deemed to have been fulfilled if a party cannot be located after diligent inquiry or if a party refuses to accept delivery.
+\item
+  At the second meeting of the Court the charges shall be read to the accused, if present, and he shall be called upon to say whether he be guilty or not. If he confess, the Court may deal with him according to its discretion; if he plead ``not guilty'' and take issue, the trial shall be scheduled and all parties and their witnesses cited to appear. The trial shall not be sooner than fourteen (14) days after such citation.
+\item
+  Accused parties may plead in writing when they cannot be personally present. If, however, at the second meeting of the judicatory an accused fails to appear without satisfactory reason for his absence, or refuses to plead, he shall again be cited, with a warning that the judicatory will deal with his contumacy, and will proceed with the trial in his absence. The time allowed for the appearance on the citation shall be determined by the judicatory with due consideration for the circumstances.
+\item
+  The accused shall be entitled to the assistance of male counsel. Such counsel shall be entitled to present evidence, interview witnesses, interpose objections, and otherwise act in defense of the accused. No professional counsel shall be permitted as such to appear and plead in cases of process in any court; but an accused person may, if he desires it, be represented before the Session by any male communing member of the same particular church. A member of the Court so employed shall not be allowed to sit in judgment in the case. No person shall be eligible to act as counsel who does not affirm the Constitution (see Bylaw §2) of this Church. When proceeding in the absence of the accused, the judicatory shall appoint counsel for the accused, who shall present a case to the judicatory in defense of the accused.
+\item
+  Before proceeding to trial, courts ought to ascertain that their citations have been duly served.
+\item
+  The judicatory shall ordinarily sit with open doors, and must do so when hearing a charge of heresy. No person shall be deprived of the right to set forth, plead, or offer into evidence the provisions of the Word of God or of the subordinate standards.
+\item
+  During the trial, the following order shall be observed: (1) The Moderator shall solemnly announce from the Chair that the Court is about to pass to the consideration of the cause, and to enjoin on the members to recollect and regard their high character as judges of a Court of Jesus Christ, and the solemn duty in which they are about to engage. (2) The indictment shall be read, and the answer of the accused heard. (3) The witnesses for the prosecutor and then those for the accused shall be examined. (4) The parties shall be heard; first, the prosecutor, and then the accused, and the prosecutor shall close. (5) The roll shall be called, and the members may express their opinion in the cause. (6) The judicatory, after deliberation, shall vote on each charge and each specification separately. If the judicatory decides that the accused is guilty, it shall proceed to determine the censure.
+\item
+  Evidence received by the judicatory during the trial must be factual in nature. It may be direct or circumstantial. Caution should be exercised in giving weight to evidence that is purely circumstantial.
+\item
+  Any person may be a witness in a judicial case if the judicatory is satisfied that he has sufficient competence to make the following affirmation, which is required of all witnesses: ``I solemnly swear that by the grace of God I will speak the truth, the whole truth, and nothing but the truth concerning the matters on which I am called to testify.'' The accused may object to the competency of any witness and to the authenticity, admissibility, and relevancy of any testimony or evidence produced in support of the charge and specifications. The judicatory shall decide on all such objections after allowing the accused to be heard in support thereof. The testimony of one witness shall be insufficient to establish the truth of any specification. If the accused so requests, no witness, unless a member of the judicatory, shall testify in the presence of another witness who is to testify concerning the same specification.
+\item
+  In order that the trial may be fair and impartial, the witnesses shall be examined in the presence of the accused, or at least after he shall have received due citation to attend. Witnesses may be cross-examined by both parties, and any questions asked which are pertinent to the issue.
+\item
+  On all questions arising in the progress of a trial, the discussion shall first be between the parties; and when they have been heard, they may be required to withdraw from the Court until the members deliberate upon and decide the point.
+\item
+  Either party may, for cause, challenge the right of any member to sit in the trial of the case, which question shall be decided by the members of the Court other than the one challenged.
+\item
+  Pending the trial of a case, any member of the Court who shall express his opinion of its merits to either party, or to any person not a member of the Court; or who shall absent himself from any sitting without the permission of the Court, or satisfactory reasons rendered, shall be thereby disqualified from taking part in the subsequent proceedings.
+\item
+  If a person who has been adjudged guilty refuses or fails to present himself for censure at the time appointed, the judicatory shall cite him to appear at another time. If he does not appear after this citation, the censure may be pronounced in his absence.
+\item
+  Minutes of the trial shall be kept by the Clerk, which shall exhibit the charges, the answer, all the testimony, and all such acts, orders, and decisions of the Court relating to the case, as either party may desire, and also the judgment. The Clerk shall, without delay, assemble the Record of the Case which shall consist of the charges, the answer, the citations and returns thereto, and the minutes herein required to be kept. The accused shall be allowed one copy of the minutes at the expense of the judicatory.
+\item
+  The following censures may be pronounced by the judicatory:
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\alph{enumi})}
+\item
+  Admonition consists in tenderly and solemnly confronting the offender with his sin, warning him of his danger, and exhorting him to repentance and to greater fidelity to the Lord Jesus Christ.
+\item
+  Rebuke is a form of censure more severe than admonition. It consists in setting forth the serious character of the offense, reproving the offender and exhorting him to repentance and to more perfect fidelity to the Lord Jesus Christ.
+\item
+  Suspension is a form of discipline by which one is deprived of the privileges of membership in the Church, of office, or of both. It may be for a definite or indefinite time. An officer or other member of the Church while under suspension, shall be the object of deep solicitude and earnest dealing from the Board of Elders and the Church to the end that he may be restored.
+\item
+  Deposition is a form of censure more severe than suspension. It consists of a solemn declaration by the judicatory that the offender is no longer an officer of the Church.
+\item
+  Excommunication, also referred to as disfellowshipping, is the most severe form of censure and is resorted to only in cases of offenses aggravated by persistent impenitence. It consists of a solemn declaration by a judicatory that the offender is no longer considered a member of the body of Christ.
+\end{enumerate}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{25}
+\item
+  Since the Church is a body made up of many parts (see 1 Cor. 12:12--30), what happens to one member of the Church necessarily affects and is of legitimate concern to other members (see Rom. 12:15--16; 1 Cor. 5:1--13; 12:12--30). Therefore, the indefinite suspension, deposition, or excommunication of a member shall be announced to the Church so that its members will be able to pray for, encourage, and exhort the accused as opportunities arise, as well as be on guard against any gossip or divisiveness that might arise from the offense or censure (see 1 Cor. 5:9--11; 2 Thess. 3:6--14; Titus 3:10). The public announcement of censure shall always be accompanied by prayer that God will graciously use the discipline for his own glory, the restoration of the offender, and the edification of the Church. This announcement may be made during a regular worship service, at a special meeting of the congregation, or by letter.
+\item
+  If an accused leaves the Church during the disciplinary process or while a censure is still in effect, and if the Board of Elders learns that he is attending another church, the Board of Elders may inform that church that the person is currently under church discipline and may ask that church to encourage the accused to repent of his sin and to be restored to the Lord and to any people whom he has offended. Such communications enhance the possibility that a person may finally repent of his sin, and, at the same time, serve to warn the other church to be on guard against the harm that the accused might do to their members (see Matt. 18:12--14; Rom. 16:17; 1 Cor. 5:1--13; 2 Thess. 3:6--14; 2 Tim. 1:15; 2:16--18; 4:9, 14--15; 3 John 9--10).
+\item
+  If a person who has been censured through suspension, deposition, or excommunication comes to repentance, the Church shall warmly and lovingly restore him to fellowship within the body (see Matt. 18:13; Luke 15:11--32). Once the Board of Elders is persuaded that the person has sincerely confessed his wrongs and sought forgiveness from God and the person or persons he offended, it shall announce his restoration. That announcement shall be accompanied by a solemn admonition to the congregation that the restored person's offenses have been forgiven and are not to be held against him or otherwise hinder his fellowship within the Church (see 2 Cor. 2:5--11). When deemed appropriate by the Board of Elders, however, the restored person may be restricted from certain responsibilities within the Church until he has demonstrated the requisite qualities for those responsibilities (see, e.g., 1 Tim. 3:2, 8; Titus 1:6).
+\end{enumerate}
+
+\begin{quote}
+\textsuperscript{1} The modes or types of church discipline vary from the mild to the severe. The following are Biblical:
+
+a) Admonition -- either private or public \[Rom. 15:14; Col. 3:16; 1 Thess. 3:14--15; Titus 3:10,11\]. The \emph{Oxford English Dictionary} defines ``admonish'' as ``to put (one) in mind \emph{to do} duty; to charge authoritatively, to exhort, to urge (always with a tacit reference to the danger or penalty of failure).'' The Scripture \{and preaching thereof\} is a form of admonition \[1 Cor. 10:11\]. Christians ought to admonish and encourage one another, for example to do good works and to attend the meetings of the Church \[*Heb. 10:24, 25*\].
+
+b) Reprove, rebuke, convince, convict \[Matt. 18:15; Eph. 5:11; 1 Tim. 5:20; 2 Tim. 4:2; Titus 1:9, 12; 2:15\]. The Greek word which is used in the passages just cited is a rich word which means ``\ldots to rebuke another with such effectual wielding of the victorious arms of the truth, as to bring him, if not always to a confession, yet at least to a conviction, of his sin\ldots.'' This word is also used of the Holy Spirit's work in John 16:8, and is found on the lips of the enthroned Christ in Rev.~3:19, where he says: ``As many as I love, I rebuke and chasten: be zealous therefore, and repent.'' Thus, proper rebuke is an act of love. The proper guide in such matters is the Word of God which we are told is ``profitable\ldots for reproof'' \[2 Tim. 3:16\].
+
+c) Excommunication. The description given by our Lord Jesus Christ and the apostle Paul define this final form of discipline: ``\ldots if he neglect to hear the Church, let him be unto thee as an heathen and a publican'' \[Matt. 18:17\]; ``But now, I have written unto you not to keep company, if any man that is called a brother be a fornicator, or covetous, or an idolater, or a railer, or a drunkard, or an extortioner; with such an one no not to eat\ldots. Therefore put away from among yourselves that wicked person'' \[1 Cor. 5:11,13\]. Thus this most severe of the forms of discipline excludes the offender from the Church and from all privileges of membership. However, while the person must certainly be excluded from the Lord's Supper, he is not excluded from attendance upon the ministry of the Word preached and taught, for even the non-believers are welcome to the public assemblies \[1 Cor. 14:23--25\]. That this form of discipline is unpleasant and a cause for mourning \[1 Cor. 5:2\] none would doubt. Nevertheless, this practice has associated with it in the New Testament Christ's own sanction \[Matt. 18:18--19\]. Paul claims this sanction when he writes concerning the Corinthian situation that the man be delivered to Satan (i.e., put back into the world which is Satan's domain), ``in the name of our Lord Jesus Christ'' and ``with the power of our Lord Jesus Christ'' \[1 Cor. 5:4\]. He could hardly state more clearly and decisively that our Lord Jesus Christ himself is the authority behind true excommunication.
+\end{quote}
+
+\emph{Biblical Church Discipline}, Daniel E. Wray
+
+\hypertarget{declaration-of-doctrine-and-policies-concerning-selective-service}{%
+\chapter{Declaration of Doctrine and Policies Concerning Selective Service}\label{declaration-of-doctrine-and-policies-concerning-selective-service}}
+
+\textbf{SECTION I}
+
+Contrary to the policies of the United States Military, God's Word requires the principled opposition to women serving in military combat positions.\footnote{On January 24, 2013, the former Secretary of Defense, Leon Panetta, and the Chairman of the Joint Chiefs of Staff, Army General Martin E. Dempsey, rescinded the policy that women are excluded from combat service (see, \url{http://} archive.defense.gov/news/newsarticle.aspx?id=119098). In January of 2016, Defense Secretary Ash Carter implemented the removal of all sex-based restrictions for women and military service (see \url{https://www.sss.gov/Registration/Women-} And-Draft). Since that time congressional legislation has been proposed, but not passed, that would require women to register with the Selective Service System (for example, see, \url{http://archive.defense.gov/news/newsarticle.aspx?id=119098} and \url{https://www.nytimes.com/2016/06/15/us/politics/congress-women-military-draft.html}).} At her 30th General Assembly (2002) the Presbyterian Church in America adopted the following recommendation from the Ad Interim Study Committee on Women in the Military: ``This Assembly declares it to be the Biblical duty of man to defend woman and therefore condemns the use of women as military combatants, as well as any conscription of women into the Armed Services of the United States.''\footnote{\url{http://pcahistory.org/pca/aiscwim.html\#3}} We reaffirm the arguments made in the majority report of that committee and understand the title of that document to be a succinct summary of Scripture's teaching: ``Man's Duty to Protect Woman.'' The following paragraphs from ``Man's Duty to Protect Woman'' are a concise summary of the Biblical arguments:
+
+First, God the Father wages war in defense of Israel, His Bride; Christ our Savior fights to the Death defending His Bride, the Church; the Holy Spirit calls men as officers to guard and protect His Bride; the duty to protect the Garden of Eden and the warning not to eat of the tree of the knowledge of good and evil was given by God to Adam; husbands protect their wives, not wives their husbands. Thus we are taught the binding nature of man's duty to guard and protect his home and wife.
+
+Second, woman is the weaker sex and part of her weakness is the vulnerability attendant to her greatest privilege---that God has made her the ``Mother of all the living.'' Men are to guard and protect her as she carries in her womb, gives birth to, and nurses her children.
+
+Third, we are to renounce every thought and action which tends towards a diminishment of sexual differentiation since God made it and called it ``good'' \[e.g., Scripture's injunctions concerning women exercising authority over men (1 Timothy 2), women or men wearing clothing of the opposite sex (Deuteronomy 22:5), sodomy (Leviticus 20:15--16), etc.\] Rather than a stingy attitude which minimizes sexuality's implications, we ought to rejoice in this, His blessing.
+
+We also object to the conscription of women on the following ground: the habitual carrying of an innocent non-combatant---the pre-born child in his mother's womb---into warfare without his informed consent is immoral. Professor Vern Poythress explains:
+
+...to conscript women is immoral, because it unnecessarily endangers the lives of fetuses. The fact that the commanders and/or conscriptors cannot know with certainty is the problem. Principles like the goring ox and the rail around the roof of houses show that we must not only not be guilty of willfully taking innocent life, but must protect against opening the possibility of accidental taking of life.\footnote{\url{http://pcahistory.org/pca/01-278.html}}
+
+The authors of ``Man's Duty to Protect Woman'' conclude:
+
+We...are convinced that the creation order of sexuality places on man the duty to lay down his life for his wife. Women and men alike must be led to understand and obey this aspect of the Biblical doctrine of sexuality, believing that such will lead to the unity and purity of the Church, and to the glory of God. Those who deny this duty, whether in word or action, oppose the Word of God. Taken together, we believe the above arguments provide a clear and compelling Scriptural rationale for declaring our Church's principled opposition to women serving in military combat positions.\footnote{\url{http://pcahistory.org/pca/01-278.html}}
+
+Therefore, Trinity Reformed Church, Bloomington objects to the use of women as military combatants, the conscription of women into the armed forces of the United States\footnote{Throughout this article our reference to the ``armed forces of the United States'' intends to include any local, state, national, or international military forces.} for either combatant or non-combatant positions, and the requirement to register for potential conscription into military service. We refuse to submit to any governmental coercion compelling women to serve in or in any way subject themselves to potential conscription into the armed forces of the United States. Such a refusal to submit is not a violation of the admonition in Romans 13 to obey the civil authorities, because ``we must obey God rather than men'' (Acts 5:29) when any claim of the civil government contradicts the Word of God. Any civil authority requiring or compelling women to compulsory military service does so in violation of the Word of God, particularly God's doctrine of personhood grounded at the most basic level in the sexual calling He gave each person when He made us either male or female. As Jesus said, ``...from the beginning of creation, God made them male and female'' (Mark 10:6).
+
+\textbf{SECTION II}
+
+We object to the conscription of any member into the armed forces in the case of warfare that is unjust according to historic Christian criteria for just war. While an individual citizen may not dictate policy to the magistrate, God alone is Lord of the conscience (WCF 20:2), nor may a Christian submit to any governmental coercion compelling service in the armed forces that violates his obligation, in union and consultation with other Christians (Prov. 15:22; Heb. 13:7), to maintain conduct just and honorable, even in war (Micah 6:8; Deut. 20). It is a fundamental and long-standing principle (reinforced in the Uniform Code of Military Justice 16c(1)(c) and 14c(2)(a)(i)) that obligation to obey an order depends on the lawfulness of that order. Moreover, inasmuch as our constitutional document, the \emph{Westminster Confession of Faith}, explicitly limits the work of civil magistrates (``to maintain piety, justice, and peace'') (WCF 23:2) and the lawful conditions of warfare (``upon just and necessary occasion''), so we affirm that refusal to submit to government that transgresses those limits is not a violation of Romans 13, because ``we must obey God rather than men'' (Acts 5:29) when any government compels us to disobey the Word of God.
+
+\textbf{SECTION III}
+
+We affirm our government's God-given responsibility to protect her citizens and give thanks to God for those men who serve in the armed forces, doing their part to fulfill that responsibility in obedience to God and His commands.
+
+\hypertarget{updates}{%
+\chapter*{Updates}\label{updates}}
+\addcontentsline{toc}{chapter}{Updates}
+
+\emph{Significant changes to these Bylaws will be listed here. For a detailed diff hosted at Github, \href{https://github.com/Trinity-Reformed-Church/trc-bylaws}{click here}.}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Current version:}
+\end{itemize}
+
+\end{document}
