@@ -1,0 +1,89 @@
+header div h1 a[href="index.html"]::before {
+    display: block;
+    content: '';
+    background-image: url(logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
+
+.header-section-number {
+    display: none;
+}
+
+.sidebar li {
+    break-inside: avoid-column;
+}
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+
+p code {
+  white-space: inherit;
+}
+
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+
+pre code {
+  white-space: inherit;
+}
+
+blockquote {
+    margin: 0 0 1rem;
+    padding: .625rem 1.25em;
+}
+
+.poetry blockquote p {
+    padding-left: 2em;
+    text-indent: -2em;
+    margin-bottom: 0;
+}
+
+.copyable {
+    margin: 0 0 1rem;
+    padding: 1.25rem 1.25rem;
+    background-color: #f0f0f0;
+}
+
+.copyable p {
+    margin: 0;
+}
+
+.copyable p.level2 {
+    padding-left: 1.5em;
+}
+
+.copyable p.level3 {
+    margin-left: 3em;
+}
+
+a {
+    color: #0086b3;
+}
+
+a:hover {
+    color: #686868;
+    text-decoration: none !important;
+}
+
+.btn-outline-primary {
+    color: #ceaa68;
+    border-color: #ceaa68;
+}
+
+.btn-outline-primary:hover {
+    background-color: #ceaa68;
+    border-color: #ceaa68;
+}
+
+.bg-primary {
+    background-color: #686868 !important;
+}
