@@ -1,7 +1,7 @@
 --- 
 title: "Trinity Reformed Church Bylaws"
 author: "Trinity Reformed Church"
-date: "`r Sys.Date()`"
+date: "October 30, 2022"
 site: bookdown::bookdown_site
 documentclass: book
 colorlinks: true
