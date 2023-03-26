@@ -79,7 +79,7 @@
 
 ------------------
 
-### Excerpt from *Biblical Church Discipline* by Daniel E. Wray
+### Excerpt from *Biblical Church Discipline* by Daniel E. Wray {-}
 
 > The modes or types of church discipline vary from the mild to the severe. The following are Biblical:
 > 
